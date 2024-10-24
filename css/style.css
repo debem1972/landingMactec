@@ -1,0 +1,477 @@
+:root {
+    --primary-color: #4463a3;
+    /*--secondary-color: #0e3582;*/
+    --secondary-color: #203a78;
+    --accent-color: #d04b2a;
+    --accent-color-dark: #ba451a;
+    --light-gray: #f5f5f5;
+    --dark-gray: #333333;
+
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.bg-primary-gradient {
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+}
+
+
+
+
+/*Nova estilização do menu nav*/
+/* Para garantir que a logo seja pequena e responsiva */
+
+.logo-container {
+    display: flex;
+    /*border:2px solid yellow;*/
+    justify-content: flex-end;
+    align-items: center;
+}
+
+
+.logo-img {
+    max-width: 130px;
+    /* Defina um tamanho máximo, ajustável conforme necessário */
+    height: auto;
+    /* Para manter a proporção */
+}
+
+
+.navMenu:hover {
+    color: var(--light-gray);
+    font-weight: bold;
+}
+
+/*--------------------------------------------------------------*/
+/*Borda estilizada temporária para teste nos botoes*/
+/*#primeiraColuna {
+    border: 2px solid red;
+}*/
+
+/*#botaoComEfeito {
+    border: 2px solid yellow;
+}*/
+
+/*----------------------------------------------------------------------*/
+/*Nova abordagem do carousel*/
+.big-logo-container {
+    /*border: 2px solid red;*/
+    background-color: #203a78;
+    background-image: url(../image/logoMactec02X.svg);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    width: 100%;
+    height: 80vh;
+    /* Ajuste conforme necessário */
+    overflow: hidden;
+}
+
+
+.carousel {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.carousel-item {
+    height: 100%;
+}
+
+.carousel-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    /*opacity: 0.6;*/
+    /* Ajuste a opacidade conforme necessário */
+}
+
+
+/*------------------------------------------------------------------------*/
+.hero-section {
+    /*border: 2px solid lime;*/
+    /*min-height: 100vh;*/
+    min-height: auto;
+    padding-top: 20px;
+    display: flex;
+    align-items: center;
+    color: white;
+}
+
+
+
+h1.display-4 {
+    margin-top: 0;
+    padding-top: 10px;
+}
+
+/*---------------------------------------------------------------*/
+/*Estilização e efeito do botão Silicite um orçamento*/
+
+.custom-btn {
+    width: 100%;
+    max-width: 240px;
+    height: 55px;
+    color: #fff;
+    border-radius: 5px;
+    /*padding: 15px 30px;*/
+    font-family: 'Lato', sans-serif;
+    font-weight: 500;
+    background: transparent;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, .5),
+        7px 7px 20px 0px rgba(0, 0, 0, .1),
+        4px 4px 5px 0px rgba(0, 0, 0, .1);
+    outline: none;
+}
+
+/* 12 */
+.btnOrca {
+    position: relative;
+    border: none;
+    box-shadow: none;
+    width: 100%;
+    max-width: 240px;
+    height: 55px;
+    line-height: 55px;
+    -webkit-perspective: 230px;
+    perspective: 230px;
+}
+
+
+
+.btnOrca span {
+    background: rgb(0, 172, 238);
+    background: linear-gradient(0deg, rgba(0, 172, 238, 1) 0%, rgba(2, 126, 251, 1) 100%);
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 55px;
+    color: #ffff;
+    font-weight: 600;
+    box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, .5),
+        7px 7px 20px 0px rgba(0, 0, 0, .1),
+        4px 4px 5px 0px rgba(0, 0, 0, .1);
+    border-radius: 5px;
+    margin: 0;
+    text-align: center;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-transition: all .3s;
+    transition: all .3s;
+}
+
+.btnOrca span:nth-child(1) {
+    box-shadow:
+        -7px -7px 20px 0px #fff9,
+        -4px -4px 5px 0px #fff9,
+        7px 7px 20px 0px #0002,
+        4px 4px 5px 0px #0001;
+    -webkit-transform: rotateX(90deg);
+    -moz-transform: rotateX(90deg);
+    transform: rotateX(90deg);
+    -webkit-transform-origin: 50% 50% -20px;
+    -moz-transform-origin: 50% 50% -20px;
+    transform-origin: 50% 50% -20px;
+}
+
+.btnOrca span:nth-child(2) {
+    -webkit-transform: rotateX(0deg);
+    -moz-transform: rotateX(0deg);
+    transform: rotateX(0deg);
+    -webkit-transform-origin: 50% 50% -20px;
+    -moz-transform-origin: 50% 50% -20px;
+    transform-origin: 50% 50% -20px;
+}
+
+.btnOrca:hover span:nth-child(1) {
+    box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, .5),
+        7px 7px 20px 0px rgba(0, 0, 0, .1),
+        4px 4px 5px 0px rgba(0, 0, 0, .1);
+    -webkit-transform: rotateX(0deg);
+    -moz-transform: rotateX(0deg);
+    transform: rotateX(0deg);
+}
+
+.btnOrca:hover span:nth-child(2) {
+    box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, .5),
+        7px 7px 20px 0px rgba(0, 0, 0, .1),
+        4px 4px 5px 0px rgba(0, 0, 0, .1);
+    color: transparent;
+    -webkit-transform: rotateX(-90deg);
+    -moz-transform: rotateX(-90deg);
+    transform: rotateX(-90deg);
+}
+
+.btnOrca:active {
+    transform: scale(0.9);
+}
+
+/*--------------------------------------------------------------*/
+.service-icon {
+    font-size: 3rem;
+    color: var(--secondary-color);
+    transition: all 0.3s ease;
+}
+
+.brand-logo {
+    flex: 0 0 auto;
+    margin: 0 10px;
+    max-width: 110px;
+    height: auto;
+    transition: filter 0.3s ease;
+}
+
+.contact-icon {
+    font-size: 2rem;
+    color: var(--light-gray);
+    margin-right: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.contact-icon:hover {
+    transform: scale(1.3);
+}
+
+/*---------------------------------------------------------------*/
+
+
+
+/* Novo estilo para os cards */
+.myCards {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    overflow: hidden;
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+    position: relative;
+    z-index: 1;
+}
+
+.myCards::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    opacity: 0;
+    z-index: -1;
+    transition: opacity 0.3s ease;
+}
+
+.myCards:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+}
+
+.myCards:hover::before {
+    opacity: 1;
+}
+
+.myCards:hover .card-body {
+    color: white;
+}
+
+.myCards:hover .service-icon {
+    color: var(--light-gray);
+    /*--accent-color*/
+    transform: scale(1.1);
+}
+
+.myCards .card-title {
+    font-weight: 600;
+    margin-bottom: 1rem;
+    transition: color 0.3s ease;
+}
+
+/*.myCards:hover .card-title {
+    color: var(--accent-color);
+    text-shadow:1px 1px 2px white;
+}*/
+
+.myCards .card-text {
+    transition: color 0.3s ease;
+}
+
+.brands-carousel {
+    overflow: hidden;
+    white-space: nowrap;
+    position: relative;
+    width: 100%;
+}
+
+.brands-carousel-inner {
+    display: flex;
+    align-items: center;
+    animation: scroll 20s linear infinite;
+    will-change: transform;
+}
+
+.brands-carousel-inner img {
+    flex: 0 0 auto;
+    margin: 0 10px;
+    max-width: 110px;
+    height: auto;
+    transition: filter 0.3s ease;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+.mail {
+    cursor: pointer;
+}
+
+/*-----------------------------------------------------------------------*/
+#map {
+    /*border:2px solid red;*/
+    box-shadow: 2px 2px 3px grey;
+    height: 400px;
+}
+
+.section {
+    padding: 50px 0;
+}
+
+.section-title {
+    /*color: var(--primary-color);*/
+    margin-bottom: 30px;
+}
+
+/*------------------------------------------------------------------------*/
+/* Responsividade */
+@media (max-width: 768px) {
+    .brand-logo {
+        max-width: 60px;
+        margin: 0 1px;
+    }
+
+
+    .brands-carousel-inner {
+        animation: scrollMobile 15s linear infinite;
+    }
+
+    @keyframes scrollMobile {
+        0% {
+            transform: translateX(0);
+        }
+
+        100% {
+            transform: translateX(-100%);
+        }
+    }
+
+    .myCards:hover {
+        transform: translateY(-5px);
+    }
+}
+
+
+/*Configurações do carousel*/
+/* Carousel invisível em telas grandes (desktop para cima) */
+@media (min-width: 992px) {
+    .carousel {
+        display: none;
+    }
+
+    .big-logo-container {
+        height: 50vh;
+    }
+}
+
+
+/* Carousel visível em tablets e dispositivos menores */
+@media (min-width: 768px) and (max-width: 991.98px),
+(max-width: 767px) {
+    .carousel {
+        display: block;
+    }
+
+    .big-logo-container {
+        background-image: none;
+        /*A imagem foi removida do fundo da div*/
+        height: 40vh;
+        /* Altura menor para dispositivos móveis */
+    }
+
+    .logo-default {
+        content: url(../image/logoMactecMarcaDaguaX.png);
+    }
+
+}
+
+
+
+/* Media query para telas menores que 768px */
+@media (max-width: 767px) {
+    .hero-section .row {
+        flex-direction: column;
+    }
+
+    .hero-section .col-md-6 {
+        width: 100%;
+        text-align: center;
+        margin-top: -10px;
+    }
+
+    .hero-section .col-md-6:last-child {
+        margin-top: 5px;
+    }
+
+    /*Estilização da div col-md-6 em devices com largura de tela inferior a 768px*/
+    #botaoComEfeito {
+        display: block;
+        position: relative;
+        text-align: center;
+
+    }
+
+    .custom-btn.btnOrca {
+        position: relative;
+        top: -28px;
+        left: -6px;
+    }
+
+    .logo-img {
+        max-width: 100px;
+    }
+}
+
+
+/*Botão back to home*/
+.back-to-top {
+    position: fixed;
+    opacity: 0.3;
+    bottom: 20px;
+    right: 20px;
+    display: none;
+    z-index: 999;
+}
+
+.back-to-top i {
+    font-size: 24px;
+    color: #e94e1b;
+}
+
+.back-to-top:hover {
+    opacity: 1;
+}
