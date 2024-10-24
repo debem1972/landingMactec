@@ -415,6 +415,8 @@ h1.display-4 {
 
     .logo-default {
         content: url(../image/logoMactecMarcaDaguaX.png);
+        width: 170px;
+        height: auto;
     }
 
 }
@@ -451,9 +453,9 @@ h1.display-4 {
         left: -6px;
     }
 
-    .logo-img {
+    /*.logo-img {
         max-width: 100px;
-    }
+    }*/
 }
 
 
